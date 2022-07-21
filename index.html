@@ -22,7 +22,9 @@
 	<body>
 		<header>
 			<div class="container">
-				<a href="#"><img src="" alt="Varga Csilla" /></a>
+				<a href="#"
+					><img src="/resources/logo2.png" alt="Varga Csilla" class="logo"
+				/></a>
 				<nav>
 					<ul aria-label="navigation" class="nav-list">
 						<li><a href="#">Miben tudok segíteni</a></li>
@@ -37,9 +39,9 @@
 		<main>
 			<section>
 				<div class="container home">
-					<div class="home-left">
+					<div class="home-left align-right">
 						<h1>Varga Csilla vagyok,</h1>
-						<h2>okleveles pszichológus</h2>
+						<h3>okleveles pszichológus</h3>
 						<p>
 							Munkám során alapelveimnek tartom a feltétel nélküli elfogadást, a
 							kedvességet és az empátiát. Arra törekszem, hogy olyan biztonságos
@@ -50,7 +52,9 @@
 							segítségével képessé válnak problémáik, konfliktusaik, elakadásaik
 							megoldására, nehéz döntések meghozatalára.
 						</p>
-						<a href="#" class="scroll-call">görgess lejjebb</a>
+						<div class="mouse-container">
+							<div class="mouse"></div>
+						</div>
 					</div>
 					<div class="home-right">
 						<img
@@ -62,7 +66,7 @@
 			</section>
 
 			<section>
-				<div class="container services">
+				<div class="container services bg-neutral-200">
 					<div class="services-left">
 						<h2>Milyen problémákkal fordulhat hozzám?</h2>
 						<ul aria-label="services" class="service-list">
@@ -84,13 +88,22 @@
 					</div>
 
 					<div class="services-right">
-						<p>Árak</p>
+						<h2>Árak</h2>
 						<ul aria-label="prices" class="price-list">
-							<li><span>Alapár</span>12000 Ft/50 perc</li>
-							<li><span>Diákoknak</span>9000 Ft/50 perc</li>
+							<li><span>Alapár</span><br />12.000 Ft / 50 perc</li>
+							<li><span>Diákoknak</span><br />9.000 Ft / 50 perc</li>
 						</ul>
 					</div>
 				</div>
+
+				<svg width="800" height="800" class="services-circle-svg">
+					<circle cx="400" cy="400" r="400" fill="var(--clr-neutral-100)" />
+					Sorry, your browser does not support inline SVG.
+				</svg>
+				<svg width="100" height="100" class="services-dot-svg">
+					<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
+					Sorry, your browser does not support inline SVG.
+				</svg>
 			</section>
 
 			<section>
@@ -99,14 +112,14 @@
 						<img src="/resources/women.jpg" alt="Varga Csilla" />
 					</div>
 
-					<div class="about-right">
+					<div class="about-right align-right">
 						<div class="experience">
 							<h2>Szakmai tapasztalat</h2>
 
 							<h3>Pszichológus (2022 -)</h3>
 							<p>Mindset Terápiás & Tanácsadó Központ</p>
 
-							<h3>“Brain trainer” (2022 -)</h3>
+							<h3>Brain trainer (2022 -)</h3>
 							<p>GEM Tanulási Központ</p>
 
 							<h3>Pszichológus (2020 - 2022)</h3>
@@ -152,47 +165,99 @@
 						</div>
 					</div>
 				</div>
+
+				<svg width="250" height="400" class="about-svg">
+					<rect
+						x="10"
+						y="10"
+						rx="100"
+						ry="100"
+						width="200"
+						height="343"
+						style="fill: none; stroke: var(--clr-primary); stroke-width: 2"
+					/>
+					Sorry, your browser does not support inline SVG.
+				</svg>
+				<svg width="100" height="100" class="about-dot-svg">
+					<circle cx="50" cy="50" r="50" fill="var(--clr-neutral-200)" />
+					Sorry, your browser does not support inline SVG.
+				</svg>
 			</section>
 
 			<section>
-				<div class="container contact">
-					<div class="contact-left">
+				<div class="container contact bg-neutral-200">
+					<div class="contact-left align-right">
 						<h2>Elérhetőségek</h2>
 						<ul aria-label="contacts" class="contact-list">
-							<li><span> Telefon </span> +36 00 000 0000</li>
-							<li><span> Email </span> notrealemail@really.com</li>
 							<li>
-								<span> Személyesen </span> Some nice office, Budapest 0000, That
-								Str. 00
+								<span> Telefon </span><br />
+								+36 00 000 0000
+							</li>
+							<li>
+								<span> Email </span><br />
+								notrealemail@really.com
+							</li>
+							<li>
+								<span> Személyesen </span><br />
+								Some nice office, Budapest 0000, That Str. 00
 							</li>
 						</ul>
 					</div>
+
 					<div class="contact-right">
 						<div class="form-container">
-							<form action="" method="post">
-								<ul>
-									<li>
-										<label for="name">Név:</label>
-										<input type="text" id="name" name="user_name" />
-									</li>
-									<li>
-										<label for="mail">Email:</label>
-										<input type="email" id="mail" name="user_email" />
-									</li>
-									<li>
-										<label for="message">Üzenet:</label>
-										<textarea id="message" name="user_message"></textarea>
-										<p>(A probléma rövid leírása.)</p>
-									</li>
-									<li><button type="submit">Küldés</button></li>
-								</ul>
+							<form action="">
+								<h3>Miben segíthetek?</h3>
+
+								<div class="input-container">
+									<input id="name" class="input" type="text" placeholder=" " />
+									<div class="cut cut-short"></div>
+									<label for="name" class="placeholder">Név:</label>
+								</div>
+								<div class="input-container">
+									<input id="email" class="input" type="text" placeholder=" " />
+									<div class="cut cut-mid"></div>
+									<label for="email" class="placeholder">Email:</label>
+								</div>
+								<div class="input-container">
+									<textarea
+										name="message"
+										id="message"
+										class="input"
+										cols="31"
+										rows="10"
+										placeholder=" "
+									></textarea>
+									<div class="cut"></div>
+									<label for="message" class="placeholder">Üzenet:</label>
+								</div>
+								<button type="button" class="submit">Küldés</button>
 							</form>
 						</div>
 					</div>
 				</div>
+
+				<svg width="250" height="400" class="contact-svg">
+					<rect
+						x="10"
+						y="10"
+						rx="100"
+						ry="100"
+						width="200"
+						height="343"
+						style="fill: none; stroke: var(--clr-primary); stroke-width: 2"
+					/>
+					Sorry, your browser does not support inline SVG.
+				</svg>
+				<svg width="100" height="100" class="contact-dot-svg">
+					<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
+					Sorry, your browser does not support inline SVG.
+				</svg>
 			</section>
 		</main>
 
-		<footer><p>2022, Designed and Built by Dudli Tibor</p></footer>
+		<footer class="bg-neutral-200">
+			<p>2022, Designed and Built by Dudli Tibor</p>
+		</footer>
 	</body>
 </html>
