@@ -52,9 +52,8 @@
 							segítségével képessé válnak problémáik, konfliktusaik, elakadásaik
 							megoldására, nehéz döntések meghozatalára.
 						</p>
-						<div class="mouse-container">
-							<div class="mouse"></div>
-						</div>
+
+						<div class="mouse"></div>
 					</div>
 					<div class="home-right">
 						<img
@@ -94,16 +93,16 @@
 							<li><span>Diákoknak</span><br />9.000 Ft / 50 perc</li>
 						</ul>
 					</div>
+					<!-- <svg width="100" height="100" class="services-dot-svg">
+						<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
+						Sorry, your browser does not support inline SVG.
+					</svg> -->
 				</div>
 
-				<svg width="800" height="800" class="services-circle-svg">
+				<!-- <svg width="800" height="800" class="services-circle-svg">
 					<circle cx="400" cy="400" r="400" fill="var(--clr-neutral-100)" />
 					Sorry, your browser does not support inline SVG.
-				</svg>
-				<svg width="100" height="100" class="services-dot-svg">
-					<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
-					Sorry, your browser does not support inline SVG.
-				</svg>
+				</svg> -->
 			</section>
 
 			<section>
@@ -166,7 +165,7 @@
 					</div>
 				</div>
 
-				<svg width="250" height="400" class="about-svg">
+				<!-- <svg width="250" height="400" class="about-svg">
 					<rect
 						x="10"
 						y="10"
@@ -181,63 +180,84 @@
 				<svg width="100" height="100" class="about-dot-svg">
 					<circle cx="50" cy="50" r="50" fill="var(--clr-neutral-200)" />
 					Sorry, your browser does not support inline SVG.
-				</svg>
+				</svg> -->
 			</section>
 
 			<section>
-				<div class="container contact bg-neutral-200">
-					<div class="contact-left align-right">
-						<h2>Elérhetőségek</h2>
-						<ul aria-label="contacts" class="contact-list">
-							<li>
-								<span> Telefon </span><br />
-								+36 00 000 0000
-							</li>
-							<li>
-								<span> Email </span><br />
-								notrealemail@really.com
-							</li>
-							<li>
-								<span> Személyesen </span><br />
-								Some nice office, Budapest 0000, That Str. 00
-							</li>
-						</ul>
-					</div>
+				<div class="contact bg-neutral-200">
+					<h2>Elérhetőségek</h2>
+					<div class="container">
+						<div class="contact-left align-right">
+							<ul aria-label="contacts" class="contact-list">
+								<li>
+									<span> Telefon </span><br />
+									+36 00 000 0000
+								</li>
+								<li>
+									<span> Email </span><br />
+									notrealemail@really.com
+								</li>
+								<li>
+									<span> Személyesen </span><br />
+									Some nice office, Budapest 0000, That Str. 00
+								</li>
+							</ul>
+						</div>
 
-					<div class="contact-right">
-						<div class="form-container">
-							<form action="">
-								<h3>Miben segíthetek?</h3>
+						<div class="contact-right">
+							<div class="form-container">
+								<form action="">
+									<h3>Miben segíthetek?</h3>
 
-								<div class="input-container">
-									<input id="name" class="input" type="text" placeholder=" " />
-									<div class="cut cut-short"></div>
-									<label for="name" class="placeholder">Név:</label>
-								</div>
-								<div class="input-container">
-									<input id="email" class="input" type="text" placeholder=" " />
-									<div class="cut cut-mid"></div>
-									<label for="email" class="placeholder">Email:</label>
-								</div>
-								<div class="input-container">
-									<textarea
-										name="message"
-										id="message"
-										class="input"
-										cols="31"
-										rows="10"
-										placeholder=" "
-									></textarea>
-									<div class="cut"></div>
-									<label for="message" class="placeholder">Üzenet:</label>
-								</div>
-								<button type="button" class="submit">Küldés</button>
-							</form>
+									<div class="input-container">
+										<input
+											id="name"
+											class="input"
+											type="text"
+											placeholder=" "
+											required
+										/>
+										<div class="cut cut-short"></div>
+										<label for="name" class="placeholder">Név:</label>
+									</div>
+									<div class="input-container">
+										<input
+											id="email"
+											class="input"
+											type="text"
+											placeholder=" "
+											required
+										/>
+										<div class="cut cut-mid"></div>
+										<label for="email" class="placeholder">Email:</label>
+									</div>
+									<div class="input-container">
+										<textarea
+											name="message"
+											id="message"
+											class="input"
+											cols="31"
+											rows="10"
+											placeholder=" "
+											required
+										></textarea>
+										<div class="cut"></div>
+										<label for="message" class="placeholder">Üzenet:</label>
+									</div>
+									<button class="cta" type="submit">
+										<h3>Küldés</h3>
+										<svg viewBox="0 0 13 10" height="10px" width="15px">
+											<path d="M1,5 L11,5"></path>
+											<polyline points="8 1 12 5 8 9"></polyline>
+										</svg>
+									</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<svg width="250" height="400" class="contact-svg">
+				<!-- <svg width="250" height="400" class="contact-svg">
 					<rect
 						x="10"
 						y="10"
@@ -252,7 +272,7 @@
 				<svg width="100" height="100" class="contact-dot-svg">
 					<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
 					Sorry, your browser does not support inline SVG.
-				</svg>
+				</svg> -->
 			</section>
 		</main>
 

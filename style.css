@@ -135,7 +135,7 @@ body {
 	font-size: var(--fs-body);
 	font-family: var(--ff-primary);
 	color: var(--clr-primary);
-	background-color: var(--clr-neutral-100);
+	background-color: var(--clr-neutral-200);
 	letter-spacing: 0.1rem;
 }
 
@@ -209,11 +209,15 @@ nav > ul {
 
 /* *Home */
 .home {
-	position: relative;
+	/* position: relative; */
 	top: 2rem;
 	align-items: center;
 	justify-content: space-between;
-	height: 95vh;
+	height: 100vh;
+	background: url(/resources/home-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -15px;
 }
 .home-left {
 	width: 45vw;
@@ -224,26 +228,18 @@ nav > ul {
 }
 .home-left p {
 	line-height: 180%;
+	z-index: 1000;
 }
 
 /* Scroll icon */
-.mouse-container {
-	background-color: var(--clr-neutral-200);
-	width: 300px;
-	height: 150px;
-	position: absolute;
-	bottom: 0;
-	left: 5%;
-	border-radius: 150px 150px 0 0;
-}
 .mouse {
 	width: 40px;
 	height: 70px;
 	border: 3px solid var(--clr-primary);
 	border-radius: 60px;
 	position: absolute;
-	bottom: 0;
-	left: 43%;
+	bottom: 10px;
+	left: calc(50% - 20px);
 }
 .mouse::before {
 	content: "";
@@ -283,10 +279,13 @@ nav > ul {
 
 /* *Services */
 .services {
-	height: 85vh;
+	height: 90vh;
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 3rem;
+	background: url(/resources/services-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 /* Left side of services */
 .services-left {
@@ -341,12 +340,12 @@ nav > ul {
 
 .services-right {
 	text-align: right;
-	background-color: var(--clr-neutral-100);
+	/* background-color: var(--clr-neutral-100); */
 	border-radius: 2rem;
 	padding: 2rem;
-	z-index: 300;
+	/* z-index: 300;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 }
 
 .services-right > ul {
@@ -355,8 +354,7 @@ nav > ul {
 .services-right > ul li {
 	padding: 0.75rem 0;
 }
-/* svg */
-.services-circle-svg {
+/* svg .services-circle-svg {
 	position: absolute;
 	top: 68rem;
 	left: -12rem;
@@ -364,16 +362,22 @@ nav > ul {
 }
 .services-dot-svg {
 	position: absolute;
-	top: 58rem;
-	right: 6rem;
-}
+	top: 117vh;
+	right: 0;
+	margin-right: calc(var(--padding-900) - 3rem);
+} */
 /* End of Services */
 
 /* *About */
 .about {
-	height: 105vh;
+	height: 100vh;
 	align-items: center;
 	justify-content: space-between;
+	background-color: var(--clr-neutral-100);
+	background: url(/resources/about-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 2rem;
 }
 /* Left side  of about*/
 .about-left > img {
@@ -382,12 +386,9 @@ nav > ul {
 	border: 10px solid var(--clr-neutral-200);
 	position: relative;
 	top: -2rem;
-	z-index: 400;
 }
 /* Left side  of about*/
-.about-right {
-	z-index: 200;
-}
+
 .about-right h3,
 .about-right p {
 	direction: rtl;
@@ -423,16 +424,24 @@ nav > ul {
 
 /* *Contact */
 .contact {
-	height: 80vh;
-	padding-top: 4rem;
+	height: 75vh;
+	padding-top: 2rem;
+	text-align: center;
+	background: url(/resources/contact-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.contact > .container {
 	align-items: flex-start;
 	justify-content: space-between;
+	padding-top: 1rem;
 }
-.contact-left h2 {
-	margin-bottom: 8rem;
+
+.contact-list {
+	padding-top: 7rem;
 }
 .contact-list li {
-	padding-bottom: 1rem;
+	padding-bottom: 3rem;
 }
 .contact-list li > span {
 	line-height: 2;
@@ -440,10 +449,11 @@ nav > ul {
 
 /* Form */
 .form-container {
-	padding-top: 4rem;
+	padding-top: 2rem;
 }
 .form-container h3 {
 	padding-bottom: 1rem;
+	text-align: left;
 }
 .input-container {
 	height: 50px;
@@ -453,6 +463,7 @@ nav > ul {
 }
 .input-container:last-of-type {
 	height: 225px;
+	margin-bottom: 1rem;
 }
 
 .input {
@@ -469,6 +480,9 @@ nav > ul {
 }
 textarea {
 	resize: none;
+}
+.input:focus {
+	border: 2px solid var(--clr-primary);
 }
 
 .cut {
@@ -519,41 +533,61 @@ textarea {
 .input:focus ~ .placeholder {
 	color: var(--clr-primary);
 }
-
-.submit {
-	background-color: var(--clr-accent);
-	border-radius: 0.5rem;
-	border: 0;
-	color: var(--clr-neutral-100);
+/* button */
+.cta {
+	position: relative;
+	margin: auto;
+	padding: 12px 18px;
+	transition: all 0.2s ease;
+	border: none;
+	background: none;
 	cursor: pointer;
-	height: 3rem;
-	width: 10rem;
-	transform: translateX(20rem);
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-	transition: all 0.25s ease-out;
 }
 
-.submit:active,
-.submit:hover {
-	box-shadow: none;
-	transform: translate(20.25rem, 0.25rem);
-}
-/* svg */
-
-.contact-svg {
+.cta:before {
+	content: "";
 	position: absolute;
-	top: 135rem;
-	left: -5rem;
-	z-index: 200;
-}
-.contact-dot-svg {
-	position: absolute;
-	top: 150rem;
-	left: 4rem;
-	z-index: 200;
+	top: 0;
+	left: 0;
+	display: block;
+	border: 2px solid var(--clr-primary);
+	border-radius: 50px;
+	background: var(--clr-neutral-100);
+	width: 60px;
+	height: 60px;
+	transition: all 0.3s ease;
 }
 
+.cta h3 {
+	position: relative;
+	font-weight: var(--fw-bold);
+}
+
+.cta svg {
+	position: relative;
+	top: -2.4rem;
+	margin-left: 7rem;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: var(--clr-accent);
+	stroke-width: 3;
+	transform: translateX(-5px);
+	transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+	width: 100%;
+	background: var(--clr-neutral-100);
+}
+
+.cta:hover svg {
+	transform: translateX(0);
+}
+
+.cta:active {
+	transform: scale(0.95);
+}
 /* End of Form */
 
 /* End of Contact */
@@ -567,12 +601,25 @@ footer {
 /* End of Footer */
 
 /* *Responsiblity */
-@media (min-width: 91rem) {
+/* over 1760px */
+@media (min-width: 110rem) {
 	:root {
 		--padding-container: 20rem;
 	}
+	.home {
+		background-position: 0 -10vh;
+	}
+	.services {
+		background-position: 0 -60px;
+	}
+	.about {
+		padding-top: 0;
+	}
+	.about-left > img {
+		width: 350px;
+	}
 }
-/* tablet sizes */
+/* tablet sizes, under 1152px*/
 @media (max-width: 72rem) {
 	:root {
 		--fs-body: var(--fs-300);
@@ -581,7 +628,7 @@ footer {
 		--padding-container: var(--padding-400);
 	}
 }
-/* mobile sizes */
+/* mobile sizes, under 896px*/
 @media (max-width: 56rem) {
 	:root {
 		--fs-body: var(--fs-500);
