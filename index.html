@@ -19,29 +19,34 @@
 		<link rel="stylesheet" href="/style.css" />
 		<script src="/main.js" defer></script>
 	</head>
+
 	<body>
 		<header>
 			<div class="container">
-				<a href="#"
+				<a id="navLink" href="#home"
 					><img src="/resources/logo2.png" alt="Varga Csilla" class="logo"
 				/></a>
+
+				<input id="checkbox" type="checkbox" class="toggler" />
+				<div class="hamburger"><div></div></div>
 				<nav>
 					<ul aria-label="navigation" class="nav-list">
-						<li><a href="#">Miben tudok segíteni</a></li>
-						<li><a href="#">Árak</a></li>
-						<li><a href="#">Rólam</a></li>
-						<li><a href="#">Kapcsolat</a></li>
+						<li><a id="navLink" href="#services">Miben tudok segíteni</a></li>
+						<li><a id="navLink" href="#prices">Árak</a></li>
+						<li><a id="navLink" href="#about">Rólam</a></li>
+						<li><a id="navLink" href="#contact">Kapcsolat</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main>
-			<section>
+			<section id="home">
 				<div class="container home">
-					<div class="home-left align-right">
+					<div class="home-left">
 						<h1>Varga Csilla vagyok,</h1>
 						<h3>okleveles pszichológus</h3>
+
 						<p>
 							Munkám során alapelveimnek tartom a feltétel nélküli elfogadást, a
 							kedvességet és az empátiát. Arra törekszem, hogy olyan biztonságos
@@ -55,6 +60,7 @@
 
 						<div class="mouse"></div>
 					</div>
+
 					<div class="home-right">
 						<img
 							src="/resources/women-in-chair.jpg"
@@ -64,19 +70,22 @@
 				</div>
 			</section>
 
-			<section>
-				<div class="container services bg-neutral-200">
+			<section id="services">
+				<div class="container services">
 					<div class="services-left">
-						<h2>Milyen problémákkal fordulhat hozzám?</h2>
+						<h2>Milyen problémával fordulhat hozzám?</h2>
+
 						<ul aria-label="services" class="service-list">
 							<li>önismeret fejlesztése</li>
 							<li>stresszkezelés, szorongás</li>
-							<li>konfliktushelyzetek kezelése</li>
 							<li>életvezetési elakadások</li>
 							<li>kapcsolati problémák</li>
 							<li>önértékelési problémák</li>
+							<li>konfliktushelyzet kezelése</li>
 						</ul>
+
 						<h2>Pszichológiai tanácsadás menete</h2>
+
 						<p>
 							Az első egy-két alkalom az ismerkedésről, a problémák
 							feltárásáról, célok megfogalmazásáról szól. Ezt követően egy
@@ -86,32 +95,23 @@
 						</p>
 					</div>
 
-					<div class="services-right">
+					<div id="prices" class="services-right">
 						<h2>Árak</h2>
-						<ul aria-label="prices" class="price-list">
+						<ul aria-label="price" class="price-list">
 							<li><span>Alapár</span><br />12.000 Ft / 50 perc</li>
 							<li><span>Diákoknak</span><br />9.000 Ft / 50 perc</li>
 						</ul>
 					</div>
-					<!-- <svg width="100" height="100" class="services-dot-svg">
-						<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
-						Sorry, your browser does not support inline SVG.
-					</svg> -->
 				</div>
-
-				<!-- <svg width="800" height="800" class="services-circle-svg">
-					<circle cx="400" cy="400" r="400" fill="var(--clr-neutral-100)" />
-					Sorry, your browser does not support inline SVG.
-				</svg> -->
 			</section>
 
-			<section>
+			<section id="about">
 				<div class="container about">
 					<div class="about-left">
 						<img src="/resources/women.jpg" alt="Varga Csilla" />
 					</div>
 
-					<div class="about-right align-right">
+					<div class="about-right">
 						<div class="experience">
 							<h2>Szakmai tapasztalat</h2>
 
@@ -129,6 +129,7 @@
 							<h3>Pszichológus (2022)</h3>
 							<p>Somogy Megyei Pedagógiai Szakszolgálat Barcsi Tagintézménye</p>
 						</div>
+
 						<div class="studies">
 							<h2>Tanulmányaim</h2>
 							<p><span>Tanácsadó szakpszichológus (2021-),</span> ELTE</p>
@@ -143,6 +144,7 @@
 								Tudományegyetem
 							</p>
 						</div>
+
 						<div class="studies">
 							<h2>Továbbképzések</h2>
 							<p>
@@ -164,30 +166,13 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- <svg width="250" height="400" class="about-svg">
-					<rect
-						x="10"
-						y="10"
-						rx="100"
-						ry="100"
-						width="200"
-						height="343"
-						style="fill: none; stroke: var(--clr-primary); stroke-width: 2"
-					/>
-					Sorry, your browser does not support inline SVG.
-				</svg>
-				<svg width="100" height="100" class="about-dot-svg">
-					<circle cx="50" cy="50" r="50" fill="var(--clr-neutral-200)" />
-					Sorry, your browser does not support inline SVG.
-				</svg> -->
 			</section>
 
-			<section>
-				<div class="contact bg-neutral-200">
+			<section id="contact">
+				<div class="contact">
 					<h2>Elérhetőségek</h2>
 					<div class="container">
-						<div class="contact-left align-right">
+						<div class="contact-left">
 							<ul aria-label="contacts" class="contact-list">
 								<li>
 									<span> Telefon </span><br />
@@ -207,7 +192,7 @@
 						<div class="contact-right">
 							<div class="form-container">
 								<form action="">
-									<h3>Miben segíthetek?</h3>
+									<!-- <h3>Miben segíthetek?</h3> -->
 
 									<div class="input-container">
 										<input
@@ -215,22 +200,25 @@
 											class="input"
 											type="text"
 											placeholder=" "
+											maxlength="43"
 											required
 										/>
 										<div class="cut cut-short"></div>
 										<label for="name" class="placeholder">Név:</label>
 									</div>
+
 									<div class="input-container">
 										<input
 											id="email"
 											class="input"
-											type="text"
+											type="email"
 											placeholder=" "
 											required
 										/>
 										<div class="cut cut-mid"></div>
 										<label for="email" class="placeholder">Email:</label>
 									</div>
+
 									<div class="input-container">
 										<textarea
 											name="message"
@@ -244,6 +232,7 @@
 										<div class="cut"></div>
 										<label for="message" class="placeholder">Üzenet:</label>
 									</div>
+
 									<button class="cta" type="submit">
 										<h3>Küldés</h3>
 										<svg viewBox="0 0 13 10" height="10px" width="15px">
@@ -256,27 +245,10 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- <svg width="250" height="400" class="contact-svg">
-					<rect
-						x="10"
-						y="10"
-						rx="100"
-						ry="100"
-						width="200"
-						height="343"
-						style="fill: none; stroke: var(--clr-primary); stroke-width: 2"
-					/>
-					Sorry, your browser does not support inline SVG.
-				</svg>
-				<svg width="100" height="100" class="contact-dot-svg">
-					<circle cx="50" cy="50" r="50" fill="var(--clr-accent)" />
-					Sorry, your browser does not support inline SVG.
-				</svg> -->
 			</section>
 		</main>
 
-		<footer class="bg-neutral-200">
+		<footer>
 			<p>2022, Designed and Built by Dudli Tibor</p>
 		</footer>
 	</body>
