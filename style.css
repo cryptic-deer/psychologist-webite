@@ -591,7 +591,12 @@ footer {
 		margin-left: 160px;
 	}
 }
-
+@media screen and (min-width: 1600px) {
+	.container {
+		padding: 0 14rem;
+		height: 100%;
+	}
+}
 /* *Tablet */
 @media screen and (max-width: 1264px) {
 	html {
