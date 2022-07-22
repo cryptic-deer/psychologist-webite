@@ -193,7 +193,7 @@ section,
 	align-items: center;
 	justify-content: space-between;
 	min-height: 95vh;
-	background: url(/resources/home-bg.svg);
+	background: url(resources/home-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 100%;
@@ -260,7 +260,7 @@ section,
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 3rem;
-	background: url(/resources/services-bg.svg);
+	background: url(resources/services-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -332,7 +332,7 @@ section,
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--clr-neutral-100);
-	background: url(/resources/about-bg.svg);
+	background: url(resources/about-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -372,7 +372,7 @@ section,
 	min-height: 75vh;
 	padding-top: 2rem;
 	text-align: center;
-	background: url(/resources/contact-bg.svg);
+	background: url(resources/contact-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -566,7 +566,7 @@ footer {
 		width: 400px;
 	}
 	.contact {
-		background: url(/resources/contact-wide-bg.svg);
+		background: url(resources/contact-wide-bg.svg);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -709,7 +709,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 	}
 	nav {
 		background: var(--clr-neutral-200);
-		background: url(/resources/nav-mobile-bg.svg);
+		background: url(resources/nav-mobile-bg.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 0 100%;
@@ -766,7 +766,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 		background: var(--clr-neutral-100);
 		flex-direction: column;
 		align-items: center;
-		background: url(/resources/home-mobile-bg.svg);
+		background: url(resources/home-mobile-bg.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 0 100%;
@@ -784,7 +784,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		background: url(/resources/services-mobile-bg.svg);
+		background: url(resources/services-mobile-bg.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 0 100%;
@@ -816,7 +816,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 	}
 	/* about */
 	.about {
-		background: url(/resources/about-mobile-bg.svg);
+		background: url(resources/about-mobile-bg.svg);
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: 0 0;
