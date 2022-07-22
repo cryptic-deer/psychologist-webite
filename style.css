@@ -260,7 +260,8 @@ section,
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 3rem;
-	background: url(resources/services-bg.svg);
+
+	background: var(--clr-neutral-200) url(resources/services-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -372,7 +373,7 @@ section,
 	min-height: 75vh;
 	padding-top: 2rem;
 	text-align: center;
-	background: url(resources/contact-bg.svg);
+	background: var(--clr-neutral-200) url(resources/contact-bg.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
