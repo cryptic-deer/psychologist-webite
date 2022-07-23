@@ -752,7 +752,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 		visibility: hidden;
 	}
 	nav > ul > li {
-		padding: 1vh 5px;
+		padding: 0 5px 0.25vh 5px;
 	}
 	nav > ul > li > a {
 		color: var(--clr-accent);
