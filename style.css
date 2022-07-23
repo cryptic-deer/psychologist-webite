@@ -12,6 +12,7 @@
 	--ff-heading: "Raleway", sans-serif;
 
 	--fw-regular: 400;
+	--fw-semi-bold: 600;
 	--fw-bold: 700;
 
 	--fs-200: 0.75rem;
@@ -176,7 +177,12 @@ nav > ul {
 }
 nav > ul a {
 	font-size: var(--fs-nav);
+	transition: all 0.2s ease;
 }
+nav > ul a:hover {
+	font-weight: var(--fw-semi-bold);
+}
+
 .active {
 	color: var(--clr-accent);
 	font-weight: var(--fw-bold);
@@ -295,11 +301,11 @@ section,
 /*  connecting lines */
 .services-left > ul li:before {
 	position: absolute;
-	left: -0.75rem;
+	left: -0.8rem;
 	top: 1.25rem;
 	content: "";
 	height: 100%;
-	border-left: 2px solid #000;
+	border-left: 3px solid #000;
 }
 /* remove line from column 1 end */
 .services-left > ul li:nth-of-type(3):before {
@@ -407,7 +413,7 @@ section,
 }
 .input-container:last-of-type {
 	height: 200px;
-	margin-bottom: 1rem;
+	margin-bottom: 1.75rem;
 }
 
 .input {
