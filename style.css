@@ -70,6 +70,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+	-webkit-text-decoration-skip: ink;
 	text-decoration-skip-ink: auto;
 }
 
@@ -90,7 +91,9 @@ svg {
 	*,
 	*::before,
 	*::after {
+		-webkit-animation-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
+		-webkit-animation-iteration-count: 1 !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;
@@ -278,6 +281,7 @@ section,
 }
 .services-left > ul {
 	display: block;
+	-moz-column-count: 2;
 	column-count: 2;
 	margin: 1rem 0 3rem 3rem;
 }
@@ -811,6 +815,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 		width: 80%;
 	}
 	.services-left > ul {
+		-moz-column-count: 1;
 		column-count: 1;
 		margin: 0;
 	}
