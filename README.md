@@ -4,7 +4,7 @@
 
 ## Description
 
-- Website for my girlfriend, who will start her own private practice next year. That's when the website will go live.
+- Website for a young psychologist, who will start her own private practice next year. That's when the website will go live.
 - For the reason above, currently the form doesn't have funcionality and the contact informations aren't real.
 
 - Credit for temporary images:
